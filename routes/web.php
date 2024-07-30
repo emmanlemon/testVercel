@@ -3,9 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/' , '/index');
 
-
-Route::get('/test', [PageController::class , 'test'])->name('test');
+Route::get('/index', [PageController::class , 'test'])->name('test');

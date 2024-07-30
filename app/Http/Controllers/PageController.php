@@ -73,6 +73,6 @@ class PageController extends Controller
 
     public function test()
     {
-        return view('sample');
+        return view('home');
     }
 }
